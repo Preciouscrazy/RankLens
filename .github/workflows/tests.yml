@@ -11,3 +11,7 @@ jobs:
         with:
           python-version: "3.11"
       - run: python -m unittest discover -s tests -v
+      - name: Validate sample report
+        run: |
+          python -m ranklens.cli data/sample_matches.json > report.json
+          python -m json.tool report.json > /dev/null
