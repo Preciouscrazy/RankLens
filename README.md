@@ -10,6 +10,10 @@ Python 3.10+; no third-party dependencies.
 
 Each JSON record has `player_id`, `rating_before`, `opponent_rating`, `result` (`win`, `loss`, `draw`), and `uncertainty` (0–1). The educational model uses a logistic expected score and `K * (0.5 + uncertainty) * (actual - expected)`. Results are illustrative, not predictions of a real game system. Use synthetic or authorized data only.
 
+## Sample output
+
+[View the sample rating report](evidence/sample-report.json) generated from the included synthetic matches.
+
 ## Development
 
 Run the unit tests before publishing changes:
