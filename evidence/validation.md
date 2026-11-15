@@ -12,14 +12,19 @@ The original RankLens repository had **three small unit tests** and one Ubuntu P
 
 The upgrade defines **34 algorithm unit tests and 14 subprocess CLI tests** (**48 methods**) and configures six GitHub Actions combinations:
 
+**Verified implementation commit:** [`13104ee0c812c98314d58a4b31009cb408226ee1`](https://github.com/Preciouscrazy/RankLens/commit/13104ee0c812c98314d58a4b31009cb408226ee1)  
+**Successful six-job GitHub Actions run:** [#43696374689](https://github.com/Preciouscrazy/RankLens/actions/runs/43696374689)
+
 | Runner | Python 3.10 | Python 3.11 | Python 3.12 |
 | --- | --- | --- | --- |
-| Ubuntu 24.04 | Pending | Pending | Pending |
-| Windows latest | Pending | Pending | Pending |
+| Ubuntu 24.04 | **PASS** | **PASS** | **PASS** |
+| Windows latest | **PASS** | **PASS** | **PASS** |
+
+The job matrix runs an editable package install followed by `python -m unittest discover -s tests -v`. The verified implementation contains 34 algorithm and 14 CLI test methods. One hard-link case can skip on a filesystem that does not support hard links; inspect individual job logs for case-level execution.
 
 Tests cover the expected-score math, extreme finite ratings and overflow, input schema and type safety, uncertainty, outcome validation, result ordering, deterministic synthetic report comparison, CLI stdout, optional file output, hard-link safety, preserving prior reports on error, and status codes.
 
-**A defined matrix is not verification by itself.** This document will record successful hosted runs for the exact source commit after GitHub Actions checks finish.
+**Source specificity:** This evidence establishes the implementation commit above. Documentation-only revisions after that commit require independent CI checks before claiming their own final head is verified.
 
 ## Reproduce
 

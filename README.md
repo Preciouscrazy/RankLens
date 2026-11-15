@@ -59,4 +59,3 @@ The test suite covers score symmetry and monotonicity, win/loss/draw direction, 
 
 The model does not account for teammate ratings, role differences, queue context, hidden rating uncertainty estimation, placement policy, streaks, season boundaries, anti-abuse logic or match quality. It should not be used to reverse-engineer, estimate, or make claims about any game's proprietary ranking system.
 
-MIT-compatible license information was not present in the source repository; no license is asserted by this README.
