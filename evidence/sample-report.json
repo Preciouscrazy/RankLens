@@ -1,0 +1,43 @@
+{
+  "project": "RankLens",
+  "records_analyzed": 3,
+  "reports": [
+    {
+      "player_id": "demo-01",
+      "result": "win",
+      "rating_before": 1420.0,
+      "opponent_rating": 1500.0,
+      "expected_score": 0.3869,
+      "actual_score": 1.0,
+      "illustrative_change": 17.66,
+      "illustrative_rating_after": 1437.66,
+      "explanation": "Illustrative change: +17.66; based on this documented toy model only.",
+      "notice": "Not a real game's ranking formula."
+    },
+    {
+      "player_id": "demo-02",
+      "result": "loss",
+      "rating_before": 1600.0,
+      "opponent_rating": 1480.0,
+      "expected_score": 0.6661,
+      "actual_score": 0.0,
+      "illustrative_change": -12.79,
+      "illustrative_rating_after": 1587.21,
+      "explanation": "Illustrative change: -12.79; based on this documented toy model only.",
+      "notice": "Not a real game's ranking formula."
+    },
+    {
+      "player_id": "demo-03",
+      "result": "draw",
+      "rating_before": 1500.0,
+      "opponent_rating": 1500.0,
+      "expected_score": 0.5,
+      "actual_score": 0.5,
+      "illustrative_change": 0.0,
+      "illustrative_rating_after": 1500.0,
+      "explanation": "Illustrative change: +0.00; based on this documented toy model only.",
+      "notice": "Not a real game's ranking formula."
+    }
+  ],
+  "notice": "Hypothetical model; not proprietary game data."
+}
